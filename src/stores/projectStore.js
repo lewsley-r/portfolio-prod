@@ -22,12 +22,14 @@ export const useProjectStore = defineStore('project', {
             frontend: 'https://github.com/lewsley-r/682-microblogs'
 
         },
-        // {
-        //     title: 'Ulster Computing Blogs',
-        //     description: 'This is a social blogging platform that I created as my final year dissertation project, it uses NLP to tag posts by the topics being discussed in the post itself',
-        //     image: 'projects/UUCB.png'
+        {
+            title: 'Premier League Fantasy Team Builder',
+            description: 'This is a fantasy team build that I created for a full stack development project, it uses Angular as a frontend SPA, with Python Flask as a backend API',
+            image: 'projects/ftb-logos_black.png',
+            frontend: 'https://github.com/lewsley-r/fantasy_team_builder/tree/master/frontend',
+            backend: 'https://github.com/lewsley-r/fantasy_team_builder/tree/master/backend'
 
-        // },
+        },
 
         ],
 
