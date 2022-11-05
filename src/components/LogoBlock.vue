@@ -180,6 +180,10 @@ export default {
 li {
   font-family: "Space Mono", monospace;
 }
+
+small{
+  color: white;
+}
 .techLogo {
   height: 10vh;
   margin: 2vh;
