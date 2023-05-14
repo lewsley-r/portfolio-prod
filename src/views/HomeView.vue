@@ -34,8 +34,7 @@ export default {
 
 <style>
 .code-font {
-  font-family: "Space Mono", monospace;
-}
+  font-family: 'Pathway Extreme', sans-serif; }
 
 .cat-heads {
   font-family: "Space Grotesk", sans-serif;
@@ -51,8 +50,7 @@ export default {
 #about-card {
   margin-top: 1vh;
   height: 50vh;
-  font-family: "Space Mono", monospace;
-  text-align: center;
+  font-family: 'Pathway Extreme', sans-serif;  text-align: center;
   margin-bottom: 5vh;
   background: black;
 }

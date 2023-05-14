@@ -14,6 +14,7 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Source+Sans+Pro&family=Space+Grotesk:wght@700&family=Space+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Pathway+Extreme:wght@500&display=swap');
 #app {
   /* font-family: Avenir, Helvetica, Arial, sans-serif; */
   -webkit-font-smoothing: antialiased;
