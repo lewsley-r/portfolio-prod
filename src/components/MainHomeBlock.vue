@@ -67,6 +67,6 @@ export default {
 
 #name {
   font-weight: 900;
-  color: greenyellow;
+  color: lightgreen;
 }
 </style>

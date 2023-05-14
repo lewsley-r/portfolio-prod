@@ -13,6 +13,7 @@
           <p>My personal laptop currently runs on Ubuntu 22.04 LTS.</p>
           <p>Outside of coding, I love cooking, cars, motorbikes and dogs!</p>
       </div>
+
 </div>
 
 </template>
