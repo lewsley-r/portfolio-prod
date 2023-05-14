@@ -44,10 +44,22 @@ export default {};
 </script>
 
 <style scoped>
+.uk-card-primary.uk-card-body .uk-nav-default>li>a, .uk-card-primary>:not([class*=uk-card-media]) .uk-nav-default>li>a, .uk-card-secondary.uk-card-body .uk-nav-default>li>a, .uk-card-secondary>:not([class*=uk-card-media]) .uk-nav-default>li>a, .uk-light .uk-nav-default>li>a, .uk-offcanvas-bar .uk-nav-default>li>a, .uk-overlay-primary .uk-nav-default>li>a, .uk-section-primary:not(.uk-preserve-color) .uk-nav-default>li>a, .uk-section-secondary:not(.uk-preserve-color) .uk-nav-default>li>a, .uk-tile-primary:not(.uk-preserve-color) .uk-nav-default>li>a, .uk-tile-secondary:not(.uk-preserve-color) .uk-nav-default>li>a {
+  color: black;
+}
+
+.uk-offcanvas-bar{
+  background-color: lightgreen;
+  opacity: 70%;
+  color: black;
+}
+
 .nav-titles {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 800;
+  opacity: 100%;
   font-size: large;
+  color: black;
 }
 
 .nav-icons {
@@ -66,5 +78,9 @@ export default {};
 .uk-button{
   color: white;
   border: none;
+}
+
+#nav {
+  background-color: lightgreen;
 }
 </style>
