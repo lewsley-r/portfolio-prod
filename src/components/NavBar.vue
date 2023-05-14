@@ -3,15 +3,15 @@
     <nav class="uk-navbar-container uk-navbar-transparent uk-padding" uk-navbar>
       <div class="uk-navbar-left">
         <ul class="uk-navbar-nav">
-          <a href="/"><img id="logo"  src="@/assets/RL_LOGO_BLACK.png" /></a>
+          <a href="/"><img id="logo" src="@/assets/RL_LOGO_BLACK.png" /></a>
+          <li class="nav-titles">
+            <a class="nav-titles" href="#about-me">Who Am I?</a>
+          </li>
           <li class="nav-titles">
             <a class="nav-titles" href="#projects">Projects</a>
           </li>
           <li class="nav-titles">
             <a class="nav-titles" href="#tech-used">Tech Experience</a>
-          </li>
-          <li class="nav-titles">
-            <a class="nav-titles" href="#about-me">Who Am I?</a>
           </li>
           <li class="nav-titles">
             <a class="nav-titles" href="#contact">Contact Me</a>

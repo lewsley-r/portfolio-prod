@@ -71,9 +71,12 @@ export default {
 }
 .uk-card {
   min-height: fit-content;
+  height: 80vh;
+  width: 60vw;
   padding: 2vw;
   background-color: white;
   border: 2px solid black;
+  border-radius: 5px;
 }
 
 .uk-card-default{

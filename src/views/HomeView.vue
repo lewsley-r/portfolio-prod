@@ -1,9 +1,9 @@
 <template>
   <div>
     <MainHomeBlock></MainHomeBlock>
+    <AboutBlock></AboutBlock>
     <ProjectBlock></ProjectBlock>
     <LogoBlock></LogoBlock>
-    <AboutBlock></AboutBlock>
     <ContactForm></ContactForm>
   </div>
 </template>
