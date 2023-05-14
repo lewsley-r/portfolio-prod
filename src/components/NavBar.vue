@@ -10,9 +10,6 @@
         <div class="uk-width-1-2@s uk-width-2-5@mt">
           <ul class="uk-nav uk-nav-default">
             <li class="nav-titles">
-              <a class="nav-titles" href="#about-me">Who Am I?</a>
-            </li>
-            <li class="nav-titles">
               <a class="nav-titles" href="#projects">Projects</a>
             </li>
             <li class="nav-titles">
