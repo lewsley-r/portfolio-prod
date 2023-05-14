@@ -55,7 +55,7 @@ export default {
 #main-home-block {
   height: 100vh;
   color: white;
-  padding-top: 15px;
+  padding-top: 10vh;
   border-bottom: 1px solid white;
 }
 
