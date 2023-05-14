@@ -16,12 +16,6 @@
       </div>
 
     </div>
-
-
-
-    <h3 class="code-font" card>
-      I'm passionate about leveraging tech to solve real world problems.
-    </h3>
   </div>
 </template>
 
