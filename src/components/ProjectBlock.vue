@@ -47,6 +47,7 @@ export default {
   color: white;
   padding: 2vw;
   height: 100vh;
+  margin-top: 5vh;
 }
 
 .uk-card-primary.uk-card-body .uk-slidenav,

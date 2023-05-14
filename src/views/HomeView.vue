@@ -1,7 +1,6 @@
 <template>
   <div>
     <MainHomeBlock></MainHomeBlock>
-    <AboutBlock></AboutBlock>
     <ProjectBlock></ProjectBlock>
     <LogoBlock></LogoBlock>
     <ContactForm></ContactForm>
@@ -16,10 +15,9 @@ import LogoBlock from "../components/LogoBlock.vue";
 import ProjectBlock from "../components/ProjectBlock.vue";
 import MainHomeBlock from "@/components/MainHomeBlock.vue";
 import ContactForm from "../components/ContactForm.vue";
-import AboutBlock from "@/components/AboutBlock.vue";
 
 export default {
-  components: { ProjectBlock, LogoBlock, MainHomeBlock, ContactForm, AboutBlock },
+  components: { ProjectBlock, LogoBlock, MainHomeBlock, ContactForm },
 
   data() {
     return {

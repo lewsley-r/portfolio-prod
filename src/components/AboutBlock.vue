@@ -3,36 +3,15 @@
       id="about-card"
       class="
         uk-card
-        uk-card-default
-        uk-grid-collapse
-        uk-child-width-1-2@s
-        uk-margin
         uk-animation-slide-left
       "
-      uk-grid
-    >
-      <div class="uk-card-media-left uk-cover-container" id="about-me">
-        <img
-          id="profile-photo"
-          src="@/assets/profile-photo.jpeg"
-          alt="ronan-lewsley-photo"
-          href="#hello-world"
-        />
-        <canvas width="600" height="400"></canvas>
-      </div>
-      
-      <div>
-        <div id="about-body" class="uk-card-body">
-          <h2 id="about-title"  class="code-font">About Me</h2>
-          <p>I'm currently employed as a Full Stack Developer at <a href="https://weareengineered.com/">Engineered.</a> The team I reside in specialise in the Spryker E-commerce framework and how it can be integrated with other web services.</p>
-          <p>In my personal time I am completing CodeAcademy courses around PHP, JS and TS. </p>
-          <p>My personal laptop runs on Ubuntu 22.04 LTS (my favourite OS for software development).</p>
-          <p>I also gain daily exposure to development in Mac OS on my work machine.</p>
-          <p>Outside of coding, I love cooking, cars, motorbikes and dogs!</p>
-          <!-- <p>My German Shepherd puppy attached below: </p>
-          <img id="dog-pic" src="@/assets/freya.jpg" /> -->
 
-        </div>
+    >   
+    <div class="bubble left">
+          <p>I'm currently employed as a Full Stack Developer at <a href="https://weareengineered.com/">Engineered.</a></p>
+          <p>In my personal time I am honing my coding skills with CodeAcademy courses. </p>
+          <p>My personal laptop currently runs on Ubuntu 22.04 LTS.</p>
+          <p>Outside of coding, I love cooking, cars, motorbikes and dogs!</p>
       </div>
 
 </div>
@@ -46,9 +25,37 @@ export default {
 </script>
 
 <style scoped>
+
+.bubble {
+  --r: 25px;
+  /* the radius */
+  --t: 30px;
+  /* the size of the tail */
+
+  max-width: 300px;
+  padding: calc(2*var(--r)/3);
+  -webkit-mask:
+    radial-gradient(var(--t) at var(--_d) 0, #0000 98%, #000 102%) var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+    conic-gradient(at var(--r) var(--r), #000 75%, #0000 0) calc(var(--r)/-2) calc(var(--r)/-2) padding-box,
+    radial-gradient(50% 50%, #000 98%, #0000 101%) 0 0/var(--r) var(--r) space padding-box;
+  background: linear-gradient(135deg, #FE6D00, #1384C5) border-box;
+  color: #fff;
+}
+
+.left {
+  --_d: 0%;
+  border-left: var(--t) solid #0000;
+  margin-right: var(--t);
+  place-self: start;
+  margin-top: 15vh;
+}
+
 #about-card{
-    height: 100vh;
     color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 #about-title{
@@ -56,10 +63,6 @@ export default {
     font-weight: 800;
 }
 
-#dog-pic{
-    height: 30vh;
-    border-radius: 1em;
-}
 
 #profile-photo{
     margin-top: 15vh;

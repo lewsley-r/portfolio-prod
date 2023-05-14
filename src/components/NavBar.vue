@@ -1,42 +1,44 @@
 <template>
   <div>
-    <nav class="uk-navbar-container uk-navbar-transparent uk-padding" uk-navbar>
-      <div class="uk-navbar-left">
-        <ul class="uk-navbar-nav">
-          <a href="/"><img id="logo" src="@/assets/RL_LOGO_BLACK.png" /></a>
-          <li class="nav-titles">
-            <a class="nav-titles" href="#about-me">Who Am I?</a>
-          </li>
-          <li class="nav-titles">
-            <a class="nav-titles" href="#projects">Projects</a>
-          </li>
-          <li class="nav-titles">
-            <a class="nav-titles" href="#tech-used">Tech Experience</a>
-          </li>
-          <li class="nav-titles">
-            <a class="nav-titles" href="#contact">Contact Me</a>
-          </li>
-        </ul>
+
+    <button class="uk-button uk-button-default uk-margin-small-right uk-float-left" uk-icon="icon: menu" type="button" uk-toggle="target: #nav"></button>
+
+
+    <div id="nav" uk-offcanvas>
+      <div class="uk-offcanvas-bar">
+
+        <div class="uk-width-1-2@s uk-width-2-5@mt">
+          <ul class="uk-nav uk-nav-default">
+            <li class="nav-titles">
+              <a class="nav-titles" href="#about-me">Who Am I?</a>
+            </li>
+            <li class="nav-titles">
+              <a class="nav-titles" href="#projects">Projects</a>
+            </li>
+            <li class="nav-titles">
+              <a class="nav-titles" href="#tech-used">Tech Experience</a>
+            </li>
+            <li class="nav-titles">
+              <a class="nav-titles" href="#contact">Contact Me</a>
+            </li>
+            <li>
+              <a class="" href="https://github.com/lewsley-r" uk-icon="icon: github"></a>
+            </li>
+            <li>
+              <a class="" href="https://www.linkedin.com/in/ronan-lewsley-9b1bbb199/"
+                uk-icon="icon: linkedin"></a>
+            </li>
+          </ul>
+        </div>
+
       </div>
-      <div class="uk-navbar-right">
-        <ul class="uk-iconnav">
-          <li>
-            <a
-              class="nav-icons"
-              href="https://github.com/lewsley-r"
-              uk-icon="icon: github"
-            ></a>
-          </li>
-          <li>
-            <a
-              class="nav-icons"
-              href="https://www.linkedin.com/in/ronan-lewsley-9b1bbb199/"
-              uk-icon="icon: linkedin"
-            ></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    </div>
+
+
+
+
+
+
   </div>
 </template>
 
@@ -62,5 +64,10 @@ export default {};
 #logo {
   height: 25vh;
   margin-top: -8vh;
+}
+
+.uk-button{
+  color: white;
+  border: none;
 }
 </style>
