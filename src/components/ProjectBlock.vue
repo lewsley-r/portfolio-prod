@@ -48,6 +48,7 @@ export default {
   padding: 2vw;
   height: 100vh;
   margin-top: 5vh;
+  border-bottom: 1px solid white;
 }
 
 .uk-card-primary.uk-card-body .uk-slidenav,

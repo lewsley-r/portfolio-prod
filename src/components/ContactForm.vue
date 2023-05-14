@@ -76,23 +76,27 @@ label {
 .uk-button-primary {
   margin-top: 2vh;
   font-weight: 800;
-  background-color: green;
+  background-color: black;
   border-radius: 20px;
 }
 .uk-card {
   box-shadow: none;
   width: 100%;
   height: 100vh;
+  background-color: lightgreen;
 }
 
 .uk-input {
   margin-bottom: 2vh;
   border-radius: 20px;
+  opacity: 60%;
 }
 
 .uk-textarea {
   border-radius: 20px;
   margin-bottom: 2vh;
+  opacity: 60%;
+
 }
 
 #contact {
@@ -106,11 +110,10 @@ label {
 }
 
 #contact-form {
-  background-color: white;
+  background-color: lightgreen;
   color: black;
   width: 30%;
-  border: 2px solid white;
-  border-radius: 20px;
+  border-radius: 5px;
   margin-top: 10vh;
   padding: 3vw;
   text-align: left;

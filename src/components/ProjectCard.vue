@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="projects">
     <div
       class="
         uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin
@@ -74,7 +74,7 @@ export default {
   height: 80vh;
   width: 60vw;
   padding: 2vw;
-  background-color: white;
+  background-color: lightgreen;
   border: 2px solid black;
   border-radius: 5px;
 }
@@ -100,5 +100,9 @@ uk-card-primary.uk-card-body .uk-h1, .uk-card-primary.uk-card-body .uk-h2, .uk-c
   font-weight: 800;
   font-family: "Space Mono", monospace;
 
+}
+
+#project-main{
+  border-bottom: 1px solid white;
 }
 </style>

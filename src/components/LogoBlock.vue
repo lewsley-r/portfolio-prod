@@ -380,7 +380,7 @@ small {
 }
 
 .uk-grid{
-  background-color: white;
+  background-color: lightgreen;
   width: 60vw;
   margin-left: 17vw;
 }
@@ -412,6 +412,8 @@ small {
   height: 100vh;
   background-color: black;
   padding: 3vh;
+  border-bottom: 1px solid white;
+  margin-bottom: 2;
 }
 
 #tech-used {

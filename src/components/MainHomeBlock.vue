@@ -2,11 +2,11 @@
   <div id="main-home-block">
     <h3 class="code-font uk-heading-medium">My name is <span uk-scrollspy="cls:uk-animation-fade" id="name">Ronan
         Lewsley</span>.</h3>
-    <h2 class="about-text code-font">{{ this.age }} Years old || Belfast, Northern Ireland || Full Stack Engineer</h2>
+    <h2 class="about-text code-font">{{ this.age }} Years old // Belfast, Northern Ireland // Full Stack Engineer</h2>
     <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s uk-text-center" uk-grid>
 
       <div>
-        <img class="uk-animation-slide-left" src="@/assets/AvatarMaker.svg" />
+        <img class="uk-animation-slide-left uk-align-center" src="@/assets/AvatarMaker.svg" />
       </div>
       <div>
         <div>
@@ -59,9 +59,10 @@ export default {
 }
 
 #main-home-block {
-  height: 90vh;
+  height: 100vh;
   color: white;
   padding-top: 15px;
+  border-bottom: 1px solid white;
 }
 
 #name {
