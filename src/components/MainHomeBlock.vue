@@ -1,21 +1,25 @@
 <template>
   <div id="main-home-block">
-    <h3 class="code-font uk-heading-medium">My name is <span uk-scrollspy="cls:uk-animation-fade" id="name">Ronan
-        Lewsley</span>.</h3>
-    <h2 class="about-text code-font">{{ this.age }} Years old // Belfast, Northern Ireland // Full Stack Engineer</h2>
-    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s uk-text-center" uk-grid>
+    <!-- <h3 id="name" class="code-font uk-heading-medium uk-animation-slide-left">My name is Ronan
+        Lewsley.</h3> -->
 
+    <div class="main-block uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s uk-text-center" uk-grid>
       <div>
         <img class="uk-animation-slide-left uk-align-center" src="@/assets/AvatarMaker.svg" />
       </div>
-      <div>
-        <div>
+      <div id="second-column">
           <AboutBlock></AboutBlock>
-        </div>
-        
       </div>
+    
+    </div>
+    <div id="next-page-box" class="uk-animation-slide-top">
+      <a id="project-arrow"  uk-icon="icon: arrow-down; ratio: 2;"
+      href="#projects">
+      </a>
+      <h5>Check out some of my projects!</h5>
 
     </div>
+ 
   </div>
 </template>
 
@@ -25,7 +29,7 @@ import AboutBlock from "@/components/AboutBlock.vue";
 
 
 export default {
-  components: {AboutBlock},
+  components: { AboutBlock },
 
   data() {
     return {
@@ -46,21 +50,35 @@ export default {
 
 <style>
 
+.uk-first-column {
+  height: 70%;
+}
 
 .code-font {
   font-family: "Space Mono", monospace;
   color: white;
 }
 
+.main-block{
+  max-height: 70%;
+}
+
+#second-column{
+  height: 70%;
+}
+
 #main-home-block {
-  height: 100vh;
+  height: 80vh;
   color: white;
-  padding-top: 10vh;
-  border-bottom: 1px solid white;
+  padding-top: 20vh;
 }
 
 #name {
   font-weight: 900;
   color: lightgreen;
+}
+
+#next-page-box {
+  margin-top: 20vh;
 }
 </style>

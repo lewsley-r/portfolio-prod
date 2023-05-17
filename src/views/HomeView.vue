@@ -43,13 +43,13 @@ export default {
 }
 
 #about-body {
-  padding: 15vh 0 0 1vw;
-  font-family: "Space Mono", monospace;
+  /* padding: 15vh 0 0 1vw; */
+  /* font-family: "Space Mono", monospace; */
 }
 
 #about-card {
   margin-top: 1vh;
-  height: 50vh;
+  /* height: 50vh; */
   font-family: 'Pathway Extreme', sans-serif;  text-align: center;
   margin-bottom: 5vh;
   background: black;

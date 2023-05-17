@@ -208,14 +208,14 @@
       <div class="uk-modal-dialog uk-modal-body">
         <h2 class="uk-modal-title">Python Experience</h2>
         <ul class="uk-list uk-list-square">
-          <li>8 years experience</li>
+          <li>3 years industry experience</li>
+          <li>additional 5 years of hobby/ academic experience</li>
           <li>
             Utilised as first programming language from teenage years
           </li>
-          <li>Utilised for various tasks;</li>
-          <li>Simple scripts</li>
-          <li>lightweight flask backends</li>
-          <li>lightweight flask backends</li>
+          <li>Utilised to format/ manipulate large datasets</li>
+          <li>Utilised in various automating Script Tasks</li>
+          <li>Flask backends</li>
           <li>Serverless cloud functions, (Openfaas and Google Cloud functions)</li>
           <li>Data analytics (Pandas, matplot etc...)</li>
           <li>Machine learning (Keras)</li>

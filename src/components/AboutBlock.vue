@@ -7,12 +7,10 @@
       "
 
     >   
+
     <div class="bubble left">
-          <p>I'm currently employed as a Full Stack Developer at <a href="https://weareengineered.com/">Engineered.</a></p>
-          <p>In my personal time I am honing my coding skills with CodeAcademy courses. </p>
-          <p>My personal laptop currently runs on Ubuntu 22.04 LTS.</p>
-          <p>Outside of coding, I love cooking, cars, motorbikes and dogs!</p>
-      </div>
+      <VueWriter :array="lines" :eraseSpeed="25" :typeSpeed="40" :iterations="1" />
+    </div>
 
 </div>
 
@@ -20,6 +18,11 @@
 
 <script>
 export default {
+  data(){
+    return{
+      lines: ["Hi, i'm Ronan Lewsley. I'm a Full Stack Developer based in Belfast, Northern Ireland."]
+    }
+  }
 
 }
 </script>
@@ -27,6 +30,8 @@ export default {
 <style scoped>
 
 .bubble {
+  font-family: "Space Mono", monospace;
+  font-weight: 600;
   --r: 25px;
   /* the radius */
   --t: 30px;
@@ -38,8 +43,8 @@ export default {
     radial-gradient(var(--t) at var(--_d) 0, #0000 98%, #000 102%) var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
     conic-gradient(at var(--r) var(--r), #000 75%, #0000 0) calc(var(--r)/-2) calc(var(--r)/-2) padding-box,
     radial-gradient(50% 50%, #000 98%, #0000 101%) 0 0/var(--r) var(--r) space padding-box;
-  background: linear-gradient(135deg, #90ee90, #90ee90) border-box;
-  color: black;
+  /* background: linear-gradient(135deg, #90ee90, #90ee90) border-box; */
+  color: lightgreen;
   /* text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
@@ -53,7 +58,7 @@ export default {
   border-left: var(--t) solid #0000;
   margin-right: var(--t);
   place-self: start;
-  margin-top: 15vh;
+  margin-top: 20vh;
 }
 
 #about-card{
@@ -61,7 +66,6 @@ export default {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 #about-title{
@@ -69,10 +73,5 @@ export default {
     font-weight: 800;
 }
 
-
-#profile-photo{
-    margin-top: 15vh;
-    margin-left: 5vw;
-}
 
 </style>
