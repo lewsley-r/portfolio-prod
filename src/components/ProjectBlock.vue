@@ -11,10 +11,9 @@
     </div>
     <div id="" class="uk-animation-slide-top">
       <a id="project-arrow"  uk-icon="icon: arrow-down; ratio: 2;"
-      href="#tech-used">
+      href="#tech-used" uk-scroll>
       </a>
       <h5>Review some of my tech experience</h5>
-
     </div>
  
   </div>
@@ -53,7 +52,10 @@ export default {
   padding: 2vw;
   height: 100vh;
   margin-top: 5vh;
-  border-bottom: 1px solid white;
+}
+
+#cat-heads{
+  margin-top: 2vh;
 }
 
 

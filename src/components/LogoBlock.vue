@@ -313,8 +313,15 @@
 
     </div>
 
-    <div class="uk-align-center">
-      <div class="
+    <div id="logo-slider" class="uk-align-center">
+      <div uk-slider>
+          <ul class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-4@">
+              <li id="logo-box" v-for="logo in this.logos" v-bind:key="logo.id">
+                <a :href="logo['modal-id']" uk-toggle><img class="techLogo" :src="logoFolderUrl + logo.src" /></a>
+              </li>
+          </ul>
+      </div>
+      <!-- <div class="
         uk-child-width-1-2@s
         uk-child-width-1-3@m
         uk-child-width-1-4@l
@@ -322,8 +329,8 @@
       " uk-grid uk-scrollspy="cls: uk-animation-fade; target: .techLogo; repeat: true">
       <div v-for="logo in this.logos" v-bind:key="logo.id">
         <a :href="logo['modal-id']" uk-toggle><img class="techLogo" :src="logoFolderUrl + logo.src" /></a>
-      </div>
-    </div>
+      </div> -->
+    <!-- </div> -->
 
     </div>
     
@@ -372,7 +379,7 @@ small {
 }
 
 .techLogo {
-  height: 10vh;
+  height: 20vh;
   margin: 2vh;
   /* background-color: white; */
   padding: 2vh;
@@ -387,6 +394,7 @@ small {
 
 .uk-modal {
   color: greenyellow;
+  margin-top: 20vh;
 }
 
 .uk-modal-body {
@@ -408,11 +416,21 @@ small {
 
 }
 
+#logo-slider{
+  margin-top: 20vh;
+}
+
+#logo-box{
+  background-color: lightgreen;
+  margin: 2vw;
+  border-radius: 5px;
+  width: fit-content;
+}
+
 #main-logo-block {
   height: 100vh;
   background-color: black;
   padding: 3vh;
-  border-bottom: 1px solid white;
   margin-bottom: 2;
 }
 

@@ -14,7 +14,7 @@
     </div>
     <div id="next-page-box" class="uk-animation-slide-top">
       <a id="project-arrow"  uk-icon="icon: arrow-down; ratio: 2;"
-      href="#projects">
+      href="#project-main" uk-scroll>
       </a>
       <h5>Check out some of my projects!</h5>
 
