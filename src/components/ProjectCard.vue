@@ -39,6 +39,13 @@ export default {
     border-radius: 5px;
     background-color: black;
     color: #00ff00;
+    
+  }
+
+  .uk-card:hover{
+    background-color: darkslategray;
+    border: 1px solid #00ff00;
+    
   }
 
   .uk-card-title{
