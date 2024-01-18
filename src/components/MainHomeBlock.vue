@@ -4,21 +4,20 @@
         Lewsley.</h3> -->
 
     <div class="main-block uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s uk-text-center" uk-grid>
-      <div>
-        <img class="uk-animation-slide-left uk-align-center" src="@/assets/AvatarMaker.svg" />
+      <div id="first-column">
+        <img class="avatar uk-animation-slide-left uk-align-center" src="@/assets/AvatarMaker.svg" />
       </div>
       <div id="second-column">
           <AboutBlock></AboutBlock>
       </div>
     
     </div>
-    <div id="next-page-box" class="uk-animation-slide-top">
+    <!-- <div id="next-page-box" class="uk-animation-slide-top">
       <a id="project-arrow"  uk-icon="icon: arrow-down; ratio: 2;"
       href="#project-main" uk-scroll>
       </a>
-      <h5>Check out some of my projects!</h5>
 
-    </div>
+    </div> -->
  
   </div>
 </template>
@@ -48,10 +47,16 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+
+/* .avatar{
+  height: 10vh;
+} */
 
 .uk-first-column {
   height: 70%;
+  margin-left: 50vh;
+  width: fit-content;
 }
 
 .code-font {
@@ -65,6 +70,7 @@ export default {
 
 #second-column{
   height: 70%;
+  width: fit-content;
 }
 
 #main-home-block {

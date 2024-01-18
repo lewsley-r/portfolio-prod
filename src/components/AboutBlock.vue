@@ -20,7 +20,7 @@
 export default {
   data(){
     return{
-      lines: ["Hi, i'm Ronan Lewsley. I'm a Full Stack Developer based in Belfast, Northern Ireland."]
+      lines: ["Hi, i'm Ronan Lewsley. I'm a Full Stack Developer based in Belfast, Northern Ireland. Scroll down to view some of my projects!"]
     }
   }
 
@@ -44,13 +44,14 @@ export default {
     conic-gradient(at var(--r) var(--r), #000 75%, #0000 0) calc(var(--r)/-2) calc(var(--r)/-2) padding-box,
     radial-gradient(50% 50%, #000 98%, #0000 101%) 0 0/var(--r) var(--r) space padding-box;
   /* background: linear-gradient(135deg, #90ee90, #90ee90) border-box; */
-  color: lightgreen;
+  color:  	#00ff00;
   /* text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
 		1px 1px 0 #000; */
     font-size: 20px;
+    background-color: black;
 }
 
 .left {

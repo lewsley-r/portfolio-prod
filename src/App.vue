@@ -6,9 +6,10 @@
 </template>
 
 <script>
-import NavBar from "./components/NavBar.vue";
+import NavBar from './components/NavBar.vue';
+
 export default {
-  components: { NavBar },
+  components: {NavBar}
 };
 </script>
 
@@ -21,12 +22,13 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background-color: black;
+  background-color: #333333;
+  overflow-x: hidden;
 }
 
-nav {
+/* nav {
   padding: 10px;
-}
+} */
 
 nav a {
   font-weight: bold;
@@ -39,7 +41,6 @@ nav a.router-link-exact-active {
 
 ::-webkit-scrollbar {
   width: 10px;
-  display: none;
   border-radius: 5px;
 }
 

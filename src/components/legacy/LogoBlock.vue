@@ -8,12 +8,7 @@
       <div class="uk-modal-dialog uk-modal-body">
         <h2 class="uk-modal-title">Angular Experience</h2>
         <ul class="uk-list uk-list-square">
-          <li>1 Years experience</li>
-          <li>Used for a single fantasy team builder application</li>
-          <li>
-            Github links for the application can be found in the projects
-            section
-          </li>
+       
         </ul>
       </div>
     </div>
@@ -362,6 +357,17 @@ export default {
         { "modal-id": "#kubernetes", src: "kubernetes-logo.png" },
         { "modal-id": "#laravel", src: "laravel-logo.png" },
         { "modal-id": "#java", src: "Java-Logo.png" },
+      ],
+      experienceInfo: [
+        {
+          topic: "Angular", 
+          details: ["1 Years experience", 
+          "Used for a single fantasy team builder application",
+          "Github links for the application can be found in the project section"]
+        },
+        {
+
+        } 
       ],
       logoFolderUrl: "/techLogos/",
     };

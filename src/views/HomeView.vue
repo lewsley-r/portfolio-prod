@@ -2,8 +2,8 @@
   <div>
     <MainHomeBlock></MainHomeBlock>
     <ProjectBlock></ProjectBlock>
-    <LogoBlock></LogoBlock>
-    <ContactForm></ContactForm>
+    <!-- <LogoBlock></LogoBlock>
+    <ContactForm></ContactForm> -->
   </div>
 </template>
 
@@ -11,13 +11,11 @@
 
 import { useProjectStore } from "@/stores/projectStore";
 
-import LogoBlock from "../components/LogoBlock.vue";
-import ProjectBlock from "../components/ProjectBlock.vue";
 import MainHomeBlock from "@/components/MainHomeBlock.vue";
-import ContactForm from "../components/ContactForm.vue";
+import ProjectBlock from "@/components/ProjectBlock.vue";
 
 export default {
-  components: { ProjectBlock, LogoBlock, MainHomeBlock, ContactForm },
+  components: {  MainHomeBlock, ProjectBlock },
 
   data() {
     return {
@@ -42,17 +40,12 @@ export default {
   color: white;
 }
 
-#about-body {
-  /* padding: 15vh 0 0 1vw; */
-  /* font-family: "Space Mono", monospace; */
-}
 
 #about-card {
   margin-top: 1vh;
   /* height: 50vh; */
   font-family: 'Pathway Extreme', sans-serif;  text-align: center;
   margin-bottom: 5vh;
-  background: black;
 }
 
 #projects {
@@ -64,18 +57,5 @@ export default {
   height: 50vh;
   border-radius: 50%;
 }
-/* 
-.uk-card-primary.uk-card-body .uk-slidenav:hover,
-.uk-card-primary > :not([class*="uk-card-media"]) .uk-slidenav:hover,
-.uk-card-secondary.uk-card-body .uk-slidenav:hover,
-.uk-card-secondary > :not([class*="uk-card-media"]) .uk-slidenav:hover,
-.uk-light .uk-slidenav:hover,
-.uk-offcanvas-bar .uk-slidenav:hover,
-.uk-overlay-primary .uk-slidenav:hover,
-.uk-section-primary:not(.uk-preserve-color) .uk-slidenav:hover,
-.uk-section-secondary:not(.uk-preserve-color) .uk-slidenav:hover,
-.uk-tile-primary:not(.uk-preserve-color) .uk-slidenav:hover,
-.uk-tile-secondary:not(.uk-preserve-color) .uk-slidenav:hover {
-  color: black;
-} */
+
 </style>
