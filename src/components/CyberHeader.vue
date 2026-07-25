@@ -59,7 +59,6 @@ const navItems = [
   { id: 'experience', label: 'Experience' },
   { id: 'tech-stack', label: 'Skills' },
   { id: 'projects', label: 'Projects' },
-  { id: 'pool-tracker', label: 'Scoreboard' },
   { id: 'contact', label: 'Contact' },
 ]
 </script>
