@@ -21,7 +21,7 @@
             <div class="space-y-1">
               <div class="inline-flex items-center space-x-2 px-2.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-[11px] font-mono font-medium">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
-                <span>Incoming Software Engineer @ Whitespace 🚀</span>
+                <span>Full Stack App Dev (AI-First) @ Whitespace 🚀</span>
               </div>
               <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-none font-heading">
                 Ronan <span class="neon-green-text">Lewsley</span>
@@ -33,7 +33,7 @@
           </div>
 
           <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl">
-            Experienced Software Engineer with over <span class="text-emerald-400 font-bold">5+ years</span> of hands-on experience building end-to-end applications, cloud orchestration systems, and automated data pipelines. Joining <span class="text-emerald-400 font-bold">Whitespace</span> this coming Monday! Skilled across <span class="text-emerald-400 font-semibold">Python</span>, <span class="text-cyan-400 font-semibold">JavaScript / TypeScript</span>, <span class="text-purple-400 font-semibold">Vue.js / Nuxt</span>, <span class="text-emerald-300 font-semibold">AWS Glue & Airflow</span>, <span class="text-cyan-300 font-semibold">Kubernetes & Terraform</span>.
+            Experienced Software Engineer with over <span class="text-emerald-400 font-bold">5+ years</span> of hands-on experience building end-to-end applications, cloud orchestration systems, and automated data pipelines. Joining <span class="text-emerald-400 font-bold">Whitespace</span> this coming Monday as a Full Stack Application Developer building AI-first platforms! Skilled across <span class="text-emerald-400 font-semibold">Python</span>, <span class="text-cyan-400 font-semibold">JavaScript / TypeScript</span>, <span class="text-purple-400 font-semibold">Vue.js / React</span>, <span class="text-emerald-300 font-semibold">AI Systems & Workflows</span>, and <span class="text-cyan-300 font-semibold">Kubernetes & DevOps</span>.
           </p>
 
           <!-- Quick Metrics Bar -->
@@ -43,8 +43,8 @@
               <div class="text-xs text-slate-400 font-mono">Years Exp</div>
             </div>
             <div class="cyber-terminal p-4 text-center">
-              <div class="text-2xl font-extrabold text-cyan-400 font-heading">10x</div>
-              <div class="text-xs text-slate-400 font-mono">Build Speedup</div>
+              <div class="text-2xl font-extrabold text-cyan-400 font-heading">AI-First</div>
+              <div class="text-xs text-slate-400 font-mono">Focus Stack</div>
             </div>
             <div class="cyber-terminal p-4 text-center">
               <div class="text-2xl font-extrabold text-purple-400 font-heading">100%</div>
@@ -81,7 +81,7 @@
                 <span class="w-3 h-3 rounded-full bg-emerald-500/80 inline-block"></span>
                 <span class="text-xs text-slate-400 font-mono ml-2">bash — ronan@belfast-dev</span>
               </div>
-              <span class="text-[10px] text-emerald-400 font-mono">v2.7.0</span>
+              <span class="text-[10px] text-emerald-400 font-mono">v2.8.0</span>
             </div>
 
             <!-- Terminal Body Log Stream -->
@@ -89,16 +89,16 @@
               <div>
                 <span class="text-emerald-400">ronan@belfast-dev:~$</span> <span class="text-white">whoami</span>
                 <div class="text-cyan-400 mt-1">
-                  Ronan Lewsley — Software Engineer (Joining Whitespace this Monday!).
+                  Ronan Lewsley — Full Stack Application Dev @ Whitespace (AI-First).
                 </div>
               </div>
 
               <div>
                 <span class="text-emerald-400">ronan@belfast-dev:~$</span> <span class="text-white">cat status.json</span>
                 <pre class="text-slate-400 mt-1 bg-slate-900/80 p-2.5 rounded-lg border border-slate-800 font-mono text-[11px]">{
-  "next_role": "Software Engineer @ Whitespace (Starting Monday)",
-  "previous": ["Rapid7 (SE 2)", "Veriteer", "Flax & Teal"],
-  "focus": ["Full Stack", "Data Engineering", "DevOps & Cloud"],
+  "role": "Full Stack Application Developer @ Whitespace",
+  "focus": ["AI-First Systems", "Sovereign AI", "Full Stack App Dev"],
+  "start": "This Monday",
   "location": "Belfast, Northern Ireland"
 }</pre>
               </div>
@@ -154,10 +154,10 @@ const executeCommand = () => {
   • contact   - Display contact details
   • clear     - Clear terminal screen`
   } else if (input === 'whoami') {
-    output = 'Ronan Lewsley — Software Engineer joining Whitespace this Monday! 5+ years experience in Full Stack, DevOps, AWS Glue, Airflow, & Kubernetes.'
+    output = 'Ronan Lewsley — Full Stack Application Dev @ Whitespace (AI-First)! 5+ years experience in Full Stack, AI Systems, DevOps, & Cloud Architecture.'
   } else if (input === 'experience') {
     output = `Career History:
-  🚀 Whitespace - Software Engineer (Starting This Monday)
+  🚀 Whitespace - Full Stack Application Developer (AI-First) [Starting Monday]
   1. Rapid7 - Software Engineer 2 (2024 May - 2026)
   2. Veriteer - Software Engineer (2022 May - 2023 Aug)
   3. Flax & Teal - Junior Software Engineer (2020 - 2022)`
@@ -169,9 +169,9 @@ const executeCommand = () => {
   4. Premier League Fantasy Team Builder - Angular, Python Flask, MongoDB`
   } else if (input === 'stack') {
     output = `Core Tech Stack:
+  • AI & Full Stack: AI-First Application Dev, Sovereign AI Platforms, Vue 3, React, Python
   • Languages: Python, JavaScript, TypeScript, PHP, Java, Scala, SQL, Ruby
-  • DevOps: Kubernetes, Docker, Helm, AWS, GCP, Azure, Terraform, GitHub Actions
-  • Workflows & Observability: Apache Airflow, AWS Glue, Prometheus, Grafana, Loki`
+  • Cloud & DevOps: Kubernetes, Docker, Helm, AWS, GCP, Azure, Terraform, GitHub Actions`
   } else if (input === 'contact') {
     output = `Contact Info:
   • Email: ronanlewsley99@gmail.com
