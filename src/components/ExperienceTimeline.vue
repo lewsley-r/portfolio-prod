@@ -14,7 +14,7 @@
 
         <div class="bg-slate-900 border border-slate-800 px-3.5 py-1.5 rounded-xl text-xs font-mono text-slate-200 flex items-center space-x-2.5 shadow-sm">
           <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span>Next Chapter: Whitespace (Software Engineer) 🚀</span>
+          <span>Status: Software Engineer @ Whitespace</span>
         </div>
       </div>
 
@@ -24,7 +24,7 @@
           v-for="(job, idx) in experiences" 
           :key="idx"
           :class="[
-            job.isUpcoming ? 'border-emerald-500/60 bg-emerald-500/5 shadow-[0_0_20px_rgba(16,185,129,0.1)]' : 'border-slate-800 hover:border-emerald-500/40',
+            job.isCurrent ? 'border-emerald-500/60 bg-emerald-500/5 shadow-[0_0_20px_rgba(16,185,129,0.1)]' : 'border-slate-800 hover:border-emerald-500/40',
             'cyber-terminal p-6 sm:p-8 rounded-2xl transition-all duration-300 space-y-4'
           ]"
         >
@@ -32,12 +32,12 @@
             <div>
               <div class="flex items-center space-x-3">
                 <h3 class="text-xl font-bold text-white font-heading">{{ job.role }}</h3>
-                <span :class="job.isUpcoming ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/50' : ''" class="cyber-badge text-[10px]">{{ job.company }}</span>
+                <span :class="job.isCurrent ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/50' : ''" class="cyber-badge text-[10px]">{{ job.company }}</span>
               </div>
               <p class="text-xs text-cyan-400 font-mono mt-1">{{ job.location }}</p>
             </div>
 
-            <div :class="job.isUpcoming ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/50 font-bold' : 'bg-slate-900 text-emerald-400'" class="border border-slate-800 px-3 py-1 rounded-lg text-xs font-mono w-fit">
+            <div :class="job.isCurrent ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/50 font-bold' : 'bg-slate-900 text-emerald-400'" class="border border-slate-800 px-3 py-1 rounded-lg text-xs font-mono w-fit">
               {{ job.period }}
             </div>
           </div>
@@ -81,8 +81,8 @@ const experiences = ref([
     role: 'Software Engineer',
     company: 'Whitespace',
     location: 'Belfast, Northern Ireland',
-    period: 'Starting This Monday',
-    isUpcoming: true,
+    period: '2026 - Present',
+    isCurrent: true,
     summary: 'Building full-stack application systems and solutions engineering on Collective, Whitespace\'s Sovereign AI operating system — enabling connected knowledge, human-machine collaboration, and decision-intelligence capabilities.',
     bullets: [],
     skills: ['Sovereign AI (Collective)', 'Full Stack Development', 'Decision Intelligence', 'Human-Machine Collaboration', 'Python', 'Vue.js / React', 'DevOps & Cloud']

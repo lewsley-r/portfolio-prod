@@ -21,7 +21,7 @@
             <div class="space-y-1">
               <div class="inline-flex items-center space-x-2 px-2.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-[11px] font-mono font-medium">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
-                <span>Software Engineer @ Whitespace 🚀</span>
+                <span>Software Engineer @ Whitespace</span>
               </div>
               <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-none font-heading">
                 Ronan <span class="neon-green-text">Lewsley</span>
@@ -33,7 +33,7 @@
           </div>
 
           <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl">
-            Experienced Software Engineer with over <span class="text-emerald-400 font-bold">5+ years</span> of hands-on experience building end-to-end applications, cloud orchestration systems, and automated data pipelines. Joining <span class="text-emerald-400 font-bold">Whitespace</span> this coming Monday! Skilled across <span class="text-emerald-400 font-semibold">Python</span>, <span class="text-cyan-400 font-semibold">JavaScript / TypeScript</span>, <span class="text-purple-400 font-semibold">Vue.js / React</span>, <span class="text-emerald-300 font-semibold">AI Platforms & Cloud Workflows</span>, and <span class="text-cyan-300 font-semibold">Kubernetes & DevOps</span>.
+            Experienced Software Engineer with over <span class="text-emerald-400 font-bold">5+ years</span> of hands-on experience building end-to-end applications, cloud orchestration systems, and automated data pipelines. Software Engineer at <span class="text-emerald-400 font-bold">Whitespace</span> building AI-first platforms! Skilled across <span class="text-emerald-400 font-semibold">Python</span>, <span class="text-cyan-400 font-semibold">JavaScript / TypeScript</span>, <span class="text-purple-400 font-semibold">Vue.js / React</span>, <span class="text-emerald-300 font-semibold">AI Platforms & Cloud Workflows</span>, and <span class="text-cyan-300 font-semibold">Kubernetes & DevOps</span>.
           </p>
 
           <!-- Quick Metrics Bar -->
@@ -81,7 +81,7 @@
                 <span class="w-3 h-3 rounded-full bg-emerald-500/80 inline-block"></span>
                 <span class="text-xs text-slate-400 font-mono ml-2">bash — ronan@belfast-dev</span>
               </div>
-              <span class="text-[10px] text-emerald-400 font-mono">v2.9.0</span>
+              <span class="text-[10px] text-emerald-400 font-mono">v3.0.0</span>
             </div>
 
             <!-- Terminal Body Log Stream -->
@@ -98,7 +98,7 @@
                 <pre class="text-slate-400 mt-1 bg-slate-900/80 p-2.5 rounded-lg border border-slate-800 font-mono text-[11px]">{
   "role": "Software Engineer @ Whitespace",
   "focus": ["Sovereign AI", "Full Stack Dev", "Cloud Architecture"],
-  "start": "This Monday",
+  "period": "2026 - Present",
   "location": "Belfast, Northern Ireland"
 }</pre>
               </div>
@@ -154,10 +154,10 @@ const executeCommand = () => {
   • contact   - Display contact details
   • clear     - Clear terminal screen`
   } else if (input === 'whoami') {
-    output = 'Ronan Lewsley — Software Engineer joining Whitespace this Monday! 5+ years experience in Full Stack, AI Systems, DevOps, & Cloud Architecture.'
+    output = 'Ronan Lewsley — Software Engineer @ Whitespace! 5+ years experience in Full Stack, AI Systems, DevOps, & Cloud Architecture.'
   } else if (input === 'experience') {
     output = `Career History:
-  🚀 Whitespace - Software Engineer [Starting This Monday]
+  • Whitespace - Software Engineer (2026 - Present)
   1. Rapid7 - Software Engineer 2 (2024 May - 2026)
   2. Veriteer - Software Engineer (2022 May - 2023 Aug)
   3. Flax & Teal - Junior Software Engineer (2020 - 2022)`
