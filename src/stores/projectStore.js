@@ -58,9 +58,9 @@ export const useProjectStore = defineStore('project', () => {
       id: 'fantasy-builder',
       title: 'Premier League Fantasy Team Builder',
       category: 'Full Stack & Sports Analytics',
-      featured: false,
+      featured: true,
       description: 'Fantasy football team optimizer SPA calculating player metric performance and value ratings using Python Flask algorithms and MongoDB storage.',
-      image: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800&auto=format&fit=crop&q=80',
+      image: './fantasy_builder.jpg',
       repo: 'https://github.com/lewsley-r/fantasy_team_builder/',
       demo: null,
       stack: ['Angular', 'Python Flask', 'MongoDB', 'REST API'],
@@ -76,7 +76,7 @@ export const useProjectStore = defineStore('project', () => {
       title: 'rlewsley.is-a.dev (Developer Portfolio)',
       category: 'Frontend & UI',
       featured: true,
-      description: 'Personal developer portfolio built with Vue 3, Vite, and Tailwind CSS featuring a sleek terminal design, CLI command interface, and pool score tracker.',
+      description: 'Personal developer portfolio built with Vue 3, Vite, and Tailwind CSS featuring a sleek terminal design, CLI command interface, and Dark/Light mode.',
       image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&auto=format&fit=crop&q=80',
       repo: 'https://github.com/lewsley-r/rlewsley.is-a.dev',
       demo: 'https://rlewsley.is-a.dev',
@@ -84,7 +84,7 @@ export const useProjectStore = defineStore('project', () => {
       highlights: [
         'Interactive Terminal CLI command input ($ help, $ whoami, $ projects)',
         'Instant HMR & ultra-fast bundle compilation with Vite',
-        'Interactive Pool score breakdown utility'
+        'Sleek Warm Carbon & Amber Gold design'
       ],
       commitStats: 'Active • v2.0'
     }
