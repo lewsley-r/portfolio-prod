@@ -81,7 +81,7 @@
                 <span class="w-3 h-3 rounded-full bg-emerald-500/80 inline-block"></span>
                 <span class="text-xs text-slate-400 font-mono ml-2">bash — ronan@belfast-dev</span>
               </div>
-              <span class="text-[10px] text-emerald-400 font-mono">v3.0.0</span>
+              <span class="text-[10px] text-emerald-400 font-mono">v3.1.0</span>
             </div>
 
             <!-- Terminal Body Log Stream -->
@@ -175,6 +175,7 @@ const executeCommand = () => {
   } else if (input === 'contact') {
     output = `Contact Info:
   • Email: ronanlewsley99@gmail.com
+  • LinkedIn: https://www.linkedin.com/in/ronan-lewsley-9b1bbb199/
   • GitHub: https://github.com/lewsley-r
   • Website: https://rlewsley.is-a.dev`
   } else if (input === 'clear') {
