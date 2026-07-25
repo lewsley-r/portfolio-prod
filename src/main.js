@@ -1,13 +1,12 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-import VueWriter from "vue-writer";
 import { createPinia } from 'pinia'
+import './style.css'
 
+const app = createApp(App)
 const pinia = createPinia()
 
-createApp(App)
-.use(router)
-.use(pinia)
-.use(VueWriter)
-.mount('#app')
+app.use(pinia)
+app.use(router)
+app.mount('#app')
