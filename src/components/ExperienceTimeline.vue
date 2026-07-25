@@ -2,18 +2,18 @@
   <section id="experience" class="py-16 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
       <!-- Section Header -->
-      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-slate-800 pb-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-slate-300 dark:border-slate-800 pb-6">
         <div>
-          <div class="flex items-center space-x-2 text-xs text-amber-400 font-mono mb-2">
+          <div class="flex items-center space-x-2 text-xs text-amber-600 dark:text-amber-400 font-mono mb-2">
             <span>// CAREER & INDUSTRY EXPERIENCE</span>
           </div>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-heading">
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight font-heading">
             Professional <span class="neon-green-text">Experience</span>
           </h2>
         </div>
 
-        <div class="bg-slate-900 border border-slate-800 px-3.5 py-1.5 rounded-xl text-xs font-mono text-slate-200 flex items-center space-x-2.5 shadow-sm">
-          <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"></span>
+        <div class="bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-800 px-3.5 py-1.5 rounded-xl text-xs font-mono text-slate-800 dark:text-slate-200 flex items-center space-x-2.5 shadow-sm">
+          <span class="w-2.5 h-2.5 rounded-full bg-amber-500 dark:bg-amber-400 animate-pulse"></span>
           <span>Status: Software Engineer @ Whitespace</span>
         </div>
       </div>
@@ -24,45 +24,45 @@
           v-for="(job, idx) in experiences" 
           :key="idx"
           :class="[
-            job.isCurrent ? 'border-amber-500/60 bg-amber-500/5 shadow-[0_0_20px_rgba(245,158,11,0.1)]' : 'border-slate-800 hover:border-amber-500/40',
+            job.isCurrent ? 'border-amber-500/60 bg-amber-500/5 shadow-[0_0_20px_rgba(245,158,11,0.1)]' : 'border-slate-300 dark:border-slate-800 hover:border-amber-500/40',
             'cyber-terminal p-6 sm:p-8 rounded-2xl transition-all duration-300 space-y-4'
           ]"
         >
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800/80 pb-4">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 dark:border-slate-800/80 pb-4">
             <div>
               <div class="flex items-center space-x-3">
-                <h3 class="text-xl font-bold text-white font-heading">{{ job.role }}</h3>
-                <span :class="job.isCurrent ? 'bg-amber-500/20 text-amber-300 border-amber-500/50' : ''" class="cyber-badge text-[10px]">{{ job.company }}</span>
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white font-heading">{{ job.role }}</h3>
+                <span :class="job.isCurrent ? 'bg-amber-500/20 text-amber-800 dark:text-amber-300 border-amber-500/50' : ''" class="cyber-badge text-[10px]">{{ job.company }}</span>
               </div>
-              <p class="text-xs text-teal-400 font-mono mt-1">{{ job.location }}</p>
+              <p class="text-xs text-teal-600 dark:text-teal-400 font-mono mt-1">{{ job.location }}</p>
             </div>
 
-            <div :class="job.isCurrent ? 'bg-amber-500/20 text-amber-300 border-amber-500/50 font-bold' : 'bg-slate-900 text-amber-400'" class="border border-slate-800 px-3 py-1 rounded-lg text-xs font-mono w-fit">
+            <div :class="job.isCurrent ? 'bg-amber-500/20 text-amber-800 dark:text-amber-300 border-amber-500/50 font-bold' : 'bg-slate-100 dark:bg-slate-900 text-amber-600 dark:text-amber-400'" class="border border-slate-300 dark:border-slate-800 px-3 py-1 rounded-lg text-xs font-mono w-fit">
               {{ job.period }}
             </div>
           </div>
 
-          <p class="text-slate-300 text-xs sm:text-sm font-mono leading-relaxed">
+          <p class="text-slate-700 dark:text-slate-300 text-xs sm:text-sm font-mono leading-relaxed">
             {{ job.summary }}
           </p>
 
           <!-- Key Responsibilities / Technical Highlights -->
           <div v-if="job.bullets && job.bullets.length" class="space-y-2 pt-2">
-            <div class="text-xs font-bold text-slate-400 font-mono uppercase tracking-wider">Key Engineering Impact & Deliverables:</div>
-            <ul class="space-y-2 text-xs text-slate-300 font-mono">
+            <div class="text-xs font-bold text-slate-500 dark:text-slate-400 font-mono uppercase tracking-wider">Key Engineering Impact & Deliverables:</div>
+            <ul class="space-y-2 text-xs text-slate-700 dark:text-slate-300 font-mono">
               <li v-for="(bullet, bIdx) in job.bullets" :key="bIdx" class="flex items-start space-x-2">
-                <span class="text-amber-400 shrink-0 mt-0.5">▸</span>
-                <span><strong class="text-white">{{ bullet.title }}:</strong> {{ bullet.desc }}</span>
+                <span class="text-amber-500 dark:text-amber-400 shrink-0 mt-0.5">▸</span>
+                <span><strong class="text-slate-900 dark:text-white">{{ bullet.title }}:</strong> {{ bullet.desc }}</span>
               </li>
             </ul>
           </div>
 
           <!-- Technologies Stack Pills -->
-          <div class="pt-4 border-t border-slate-800/60 flex flex-wrap gap-1.5">
+          <div class="pt-4 border-t border-slate-200 dark:border-slate-800/60 flex flex-wrap gap-1.5">
             <span 
               v-for="(tech, tIdx) in job.skills" 
               :key="tIdx"
-              class="bg-slate-900 border border-slate-800 text-slate-300 text-[10px] font-mono px-2.5 py-0.5 rounded-md"
+              class="bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-800 text-slate-800 dark:text-slate-300 text-[10px] font-mono px-2.5 py-0.5 rounded-md"
             >
               {{ tech }}
             </span>
