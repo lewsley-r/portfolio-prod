@@ -14,7 +14,7 @@
 
         <div class="bg-slate-900 border border-slate-800 px-3.5 py-1.5 rounded-xl text-xs font-mono text-slate-200 flex items-center space-x-2.5 shadow-sm">
           <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span>Next Chapter: Whitespace (AI-First Application Dev) 🚀</span>
+          <span>Next Chapter: Whitespace (Full Stack App Dev) 🚀</span>
         </div>
       </div>
 
@@ -78,14 +78,14 @@ import { ref } from 'vue'
 
 const experiences = ref([
   {
-    role: 'Full Stack Application Developer (AI-First)',
+    role: 'Full Stack Application Developer',
     company: 'Whitespace',
     location: 'Belfast, Northern Ireland',
     period: 'Starting This Monday',
     isUpcoming: true,
-    summary: 'Building AI-first application systems, decision-intelligence platforms, and scalable full-stack software solutions at Whitespace.',
+    summary: 'Building full-stack application systems and solutions engineering on Collective, Whitespace\'s Sovereign AI operating system — enabling connected knowledge, human-machine collaboration, and decision-intelligence capabilities.',
     bullets: [],
-    skills: ['AI-First Application Dev', 'Full Stack Architecture', 'Sovereign AI Systems', 'Decision Intelligence', 'Python', 'Vue.js / React', 'DevOps & Cloud']
+    skills: ['Sovereign AI (Collective)', 'Full Stack Application Dev', 'Decision Intelligence', 'Human-Machine Collaboration', 'Python', 'Vue.js / React', 'DevOps & Cloud']
   },
   {
     role: 'Software Engineer 2',
