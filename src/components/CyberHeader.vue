@@ -28,11 +28,22 @@
           </a>
         </nav>
 
-        <!-- Quick System Badge & GitHub link -->
-        <div class="flex items-center space-x-3">
-          <span class="cyber-badge font-mono text-[10px] hidden sm:inline-flex">
-            Belfast, UK
-          </span>
+        <!-- Live Theme Palette Selector & GitHub link -->
+        <div class="flex items-center space-x-2 sm:space-x-3">
+          <!-- Theme Palette Selector -->
+          <div class="flex items-center space-x-1 bg-slate-900/90 border border-slate-800 p-1 rounded-xl">
+            <button
+              v-for="t in themes"
+              :key="t.id"
+              @click="setTheme(t.id)"
+              :title="`Theme: ${t.name}`"
+              :class="[
+                currentTheme === t.id ? 'ring-2 ring-white scale-110' : 'opacity-60 hover:opacity-100',
+                'w-4 h-4 rounded-full transition-all cursor-pointer'
+              ]"
+              :style="{ backgroundColor: t.color }"
+            ></button>
+          </div>
 
           <a
             href="https://github.com/lewsley-r"
@@ -50,9 +61,10 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 
 const activeSection = ref('hero')
+const currentTheme = ref('emerald')
 
 const navItems = [
   { id: 'hero', label: 'About' },
@@ -61,4 +73,22 @@ const navItems = [
   { id: 'projects', label: 'Projects' },
   { id: 'contact', label: 'Contact' },
 ]
+
+const themes = [
+  { id: 'emerald', name: 'Enterprise Emerald', color: '#10b981' },
+  { id: 'violet', name: 'Electric Violet', color: '#8b5cf6' },
+  { id: 'amber', name: 'Warm Amber', color: '#f59e0b' },
+  { id: 'mono', name: 'Stealth Carbon', color: '#e2e8f0' }
+]
+
+const setTheme = (themeId) => {
+  currentTheme.value = themeId
+  document.documentElement.setAttribute('data-theme', themeId)
+  localStorage.setItem('user-theme', themeId)
+}
+
+onMounted(() => {
+  const saved = localStorage.getItem('user-theme') || 'emerald'
+  setTheme(saved)
+})
 </script>
