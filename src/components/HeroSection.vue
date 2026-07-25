@@ -81,7 +81,7 @@
                 <span class="w-3 h-3 rounded-full bg-emerald-500/80 inline-block"></span>
                 <span class="text-xs text-slate-400 font-mono ml-2">bash — ronan@belfast-dev</span>
               </div>
-              <span class="text-[10px] text-emerald-400 font-mono">v3.2.0</span>
+              <span class="text-[10px] text-emerald-400 font-mono">v3.3.0</span>
             </div>
 
             <!-- Terminal Body Log Stream -->
@@ -158,7 +158,7 @@ const executeCommand = () => {
   } else if (input === 'experience') {
     output = `Career History:
   • Whitespace - Software Engineer (2026 - Present)
-  1. Rapid7 - Software Engineer 2 (2024 May - 2026)
+  1. Rapid7 - Software Engineer (2024 May - 2026)
   2. Veriteer - Software Engineer (2022 May - 2023 Aug)
   3. Flax & Teal - Junior Software Engineer (2020 - 2022)`
   } else if (input === 'projects') {

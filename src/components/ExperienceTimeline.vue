@@ -88,7 +88,7 @@ const experiences = ref([
     skills: ['Sovereign AI (Collective)', 'Full Stack Development', 'Decision Intelligence', 'Human-Machine Collaboration', 'Python', 'Vue.js / React', 'DevOps & Cloud']
   },
   {
-    role: 'Software Engineer 2',
+    role: 'Software Engineer',
     company: 'Rapid7',
     location: 'Belfast, Northern Ireland',
     period: 'May 2024 - 2026',
