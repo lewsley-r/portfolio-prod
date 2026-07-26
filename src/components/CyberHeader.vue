@@ -5,7 +5,7 @@
         <a href="#hero" class="flex items-center space-x-3 group">
           <div class="w-2.5 h-2.5 rounded-full bg-amber-500 animate-pulse shadow-[0_0_8px_#f59e0b]"></div>
           <span class="font-bold text-sm text-slate-100 light:text-slate-900 tracking-tight group-hover:text-amber-400 transition-colors font-heading">
-            rlewsley.is-a.dev <span class="text-xs text-slate-400 light:text-slate-600 font-mono font-normal">| Full Stack Engineer</span>
+            rlewsley.is-a.dev
           </span>
         </a>
 
