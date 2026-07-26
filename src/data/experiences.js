@@ -16,6 +16,7 @@ export const experiences = [
     period: 'May 2024 - 2026',
     summary: 'Engineered high-throughput data orchestration systems, build optimization pipelines, and observability tracing tools across cloud data mesh infrastructure.',
     bullets: [
+      { title: 'Glue-to-EMR Migration Architecture', desc: 'End-to-end design and architecture for migrating all Data Mesh ETL jobs from AWS Glue to AWS EMR on EKS. Phase 1 delivered first job migration, alerts and monitoring, full staging and production infra across all regions, and proof of 50–75% cost savings on Glue — estimated millions in annual savings. End-to-end design documented in research doc and fully ticketed in Jira.' },
       { title: 'Python Orchestration', desc: 'Led development of a job orchestration system for stakeholders to manage the deployment, configuration, and scheduling of AWS Glue Jobs.' },
       { title: 'DevOps Efficiency', desc: 'Engineered a Maven deployment pipeline that reduced build times by over 10x in many cases.' },
       { title: 'Workflow Automation', desc: 'Optimized Apache Airflow implementations, solving critical issues around concurrency and DAG stability.' },
@@ -23,7 +24,7 @@ export const experiences = [
       { title: 'Data Mesh Infrastructure', desc: 'Independently deployed end-to-end pipelines into the Data Mesh for multiple product teams.' },
       { title: 'Mentorship', desc: 'Acted as a mentor to junior team members, advising on technical approaches and healthy work practices.' }
     ],
-    skills: ['Python', 'AWS Glue', 'Apache Airflow', 'Maven Pipeline', 'Data Mesh', 'Observability', 'Java', 'Docker', 'Kubernetes']
+    skills: ['Python', 'AWS Glue', 'EMR on EKS', 'Apache Airflow', 'Maven Pipeline', 'Data Mesh', 'Observability', 'Java', 'Docker', 'Kubernetes', 'Argo']
   },
   {
     role: 'Software Engineer',
