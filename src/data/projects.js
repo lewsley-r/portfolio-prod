@@ -53,7 +53,7 @@ export const projects = [
     category: 'Frontend & UI',
     description: 'Personal developer portfolio built with Vue 3, Vite, and Tailwind CSS featuring a Dark/Light mode.',
     image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&auto=format&fit=crop&q=80',
-    repo: 'https://github.com/lewsley-r/rlewsley.is-a.dev',
+    repo: 'https://github.com/lewsley-r/portfolio-prod',
     demo: 'https://rlewsley.is-a.dev',
     stack: ['Vue 3', 'Vite', 'Tailwind CSS'],
     highlights: [
