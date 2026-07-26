@@ -6,3 +6,4 @@
 - **GitHub Repo**: `lewsley-r/portfolio-prod` (main + gh-pages branches)
 - **Design Theme**: Warm Carbon & Amber Gold (`#12161f` / `#f59e0b` / `#14b8a6`)
 - **CNAME**: `public/CNAME` contains `rlewsley.is-a.dev`
+- **Versioning**: Bump `version` in `package.json` with each meaningful change. Follow semver — patch for fixes, minor for features, major for breaking redesigns. Commit the version bump alongside the change, not separately.
