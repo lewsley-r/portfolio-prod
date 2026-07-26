@@ -1,5 +1,5 @@
 <template>
-  <section id="hero" class="py-12 lg:py-16 relative">
+  <section id="hero" class="py-16 lg:py-24 relative min-h-[calc(100vh-4rem)] flex items-center">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col items-center text-center space-y-6">
         <div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-5">
@@ -15,10 +15,6 @@
           </div>
 
           <div class="space-y-1">
-            <div class="inline-flex items-center space-x-2 px-2.5 py-0.5 rounded-full bg-amber-500/10 light:bg-amber-500/20 border border-amber-500/30 text-amber-600 light:text-amber-800 dark:text-amber-400 text-[11px] font-mono font-medium">
-              <span class="w-1.5 h-1.5 rounded-full bg-amber-500 dark:bg-amber-400 animate-ping"></span>
-              <span>Software Engineer @ Whitespace</span>
-            </div>
             <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-none font-heading">
               Ronan <span class="neon-amber-text">Lewsley</span>
             </h1>
@@ -29,7 +25,7 @@
         </div>
 
         <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl">
-          Software Engineer with <span class="text-highlight-amber">5+ years</span> building end-to-end applications, cloud orchestration systems, and automated data pipelines. Currently at <span class="text-highlight-amber">Whitespace</span> engineering on Collective, a sovereign AI operating system.
+          Software Engineer with <span class="text-highlight-amber">5+ years</span> building end-to-end applications, cloud orchestration systems, and automated data pipelines. Currently at <span class="text-highlight-amber">Whitespace</span> building sovereign AI.
         </p>
 
         <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
